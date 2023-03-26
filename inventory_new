@@ -1,0 +1,16 @@
+[master]
+localhost
+
+[webservers]
+mclient01.rlabs.com
+
+[dbservers]
+mclient02.rlabs.com
+
+[servers:children]
+webservers
+dbservers
+
+[servers:vars]
+ansible_user=pmurali
+ansible_become=yes
